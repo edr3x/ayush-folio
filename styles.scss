@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$black: #000000;
+$shadow: rgb(201, 201, 201);
+
+@mixin center {
+  padding-top: 3vmin;
+  padding-right: 3vmin;
+  padding-left: 3vmin;
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 2%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  @include center();
+}
